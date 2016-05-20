@@ -6,18 +6,16 @@
     <element name="web-app">
         <complexType>
 
-            <sequence>
-                <choice minOccurs="0" maxOccurs="unbounded">
-                    <element name="display-name" type="string"/>
-                    <element name="welcome-file-list" type="tns:WelcomeFileList"/>
-                    <element name="filter" type="tns:Filter"/>
-                    <element name="filter-mapping" type="tns:FilterMapping"/>
-                    <element name="listener" type="tns:Listener"/>
-                    <element name="servlet" type="tns:Servlet"/>
-                    <element name="servlet-mapping" type="tns:ServletMapping"/>
-                    <element name="error-page" type="tns:ErrorPage"/>
-                </choice>
-            </sequence>
+            <choice minOccurs="0" maxOccurs="unbounded">
+                <element name="display-name" type="string"/>
+                <element name="welcome-file-list" type="tns:WelcomeFileList"/>
+                <element name="filter" type="tns:Filter"/>
+                <element name="filter-mapping" type="tns:FilterMapping"/>
+                <element name="listener" type="tns:Listener"/>
+                <element name="servlet" type="tns:Servlet"/>
+                <element name="servlet-mapping" type="tns:ServletMapping"/>
+                <element name="error-page" type="tns:ErrorPage"/>
+            </choice>
 
             <attribute name="id" type="string"/>
             <attribute name="version" type="string"/>
